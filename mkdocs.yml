@@ -1,0 +1,180 @@
+# Site Information
+site_name: Study Blog
+site_description: 공부한 내용이 가끔씩 기록됩니다
+site_author: Taegyu Heo
+site_url: https://taegyu-heo-bigstar.github.io/blog
+
+# Repository
+repo_name: taegyu-heo-bigstar/blog
+repo_url: https://github.com/taegyu-heo-bigstar/blog
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2024 Taegyu Heo
+
+# Configuration
+theme:
+  name: material
+  language: ko
+  
+  # Color scheme
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  # Font
+  font:
+    text: Noto Sans KR
+    code: Roboto Mono
+  
+  # Features
+  features:
+    - navigation.instant        # Instant loading
+    - navigation.tracking       # Anchor tracking
+    - navigation.tabs           # Navigation tabs
+    - navigation.tabs.sticky    # Sticky navigation tabs
+    - navigation.sections       # Navigation sections
+    - navigation.expand         # Expand navigation by default
+    - navigation.top            # Back to top button
+    - navigation.footer         # Footer navigation
+    - search.suggest            # Search suggestions
+    - search.highlight          # Highlight search results
+    - search.share              # Share search results
+    - toc.follow                # Follow table of contents
+    - content.code.copy         # Copy code button
+    - content.code.annotate     # Code annotations
+    - content.tabs.link         # Link content tabs
+  
+  # Icons
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/book-open-page-variant
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  
+  - Notes:
+    - notes/index.md
+    - Python:
+      - notes/python/index.md
+    - Web:
+      - notes/web/index.md
+    - CS:
+      - notes/cs/index.md
+  
+  - Projects:
+    - projects/index.md
+  
+  - References:
+    - references/index.md
+
+# Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr                        # Abbreviations
+  - admonition                  # Admonitions (notes, warnings, etc.)
+  - attr_list                   # Attribute lists
+  - def_list                    # Definition lists
+  - footnotes                   # Footnotes
+  - md_in_html                  # Markdown in HTML
+  - tables                      # Tables
+  - toc:
+      permalink: true           # Permanent links for headings
+      toc_depth: 3              # Table of contents depth
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:        # LaTeX math
+      generic: true
+  - pymdownx.betterem:          # Better emphasis
+      smart_enable: all
+  - pymdownx.caret              # Superscript (^)
+  - pymdownx.mark               # Highlight (==)
+  - pymdownx.tilde              # Strikethrough (~)
+  - pymdownx.critic             # Critic markup
+  - pymdownx.details            # Collapsible details
+  - pymdownx.emoji:             # Emoji support
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:         # Code highlighting
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite       # Inline code highlighting
+  - pymdownx.keys               # Keyboard keys
+  - pymdownx.magiclink:         # Magic links
+      repo_url_shorthand: true
+      user: taegyu-heo-bigstar
+      repo: blog
+  - pymdownx.smartsymbols       # Smart symbols
+  - pymdownx.snippets           # Snippets
+  - pymdownx.superfences:       # Superfences (code blocks)
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:            # Tabbed content
+      alternate_style: true
+  - pymdownx.tasklist:          # Task lists
+      custom_checkbox: true
+
+# Plugins
+plugins:
+  - search:                     # Search plugin
+      lang:
+        - ko
+        - en
+      separator: '[\s\-\.]+'
+  
+  - tags                        # Tags plugin
+
+# Extra CSS and JavaScript (uncomment to use)
+# extra_css:
+#   - stylesheets/extra.css
+
+# extra_javascript:
+#   - javascripts/mathjax.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extra configuration
+extra:
+  # Social links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/taegyu-heo-bigstar
+  
+  # Analytics (optional)
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+  
+  # Consent (optional)
+  # consent:
+  #   title: Cookie consent
+  #   description: >-
+  #     We use cookies to recognize your repeated visits and preferences, as well
+  #     as to measure the effectiveness of our documentation and whether users
+  #     find what they're searching for. With your consent, you're helping us to
+  #     make our documentation better.
+
+# Validation
+strict: false                   # Set to true for strict validation
+
+# Development server
+dev_addr: 127.0.0.1:8000
