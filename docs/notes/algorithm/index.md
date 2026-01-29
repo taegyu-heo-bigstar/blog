@@ -1,34 +1,28 @@
-# Web Development Notes
+# algorithm Development Notes
 
-웹 개발 관련 학습 내용을 정리합니다.
+알고리즘 관련 학습 내용을 정리합니다.
 
 ## 📚 Topics
 
-- HTML, CSS 기초 및 고급 기법
-- JavaScript (ES6+, TypeScript)
-- 프론트엔드 프레임워크 (React, Vue, Next.js)
-- 백엔드 개발 (Node.js, Express)
-- API 설계 (REST, GraphQL)
-- 성능 최적화
-- 웹 보안
-- 브라우저 동작 원리
+- 정렬 알고리즘 (퀵 정렬, 병합 정렬 등)
+- 탐색 알고리즘 (이진 탐색, 깊이 우선 탐색 등)
+- 동적 프로그래밍
+- 그래프 이론
+- 트리 구조
+- 알고리즘 분석 (시간 복잡도, 공간 복잡도)
+- 백트래킹
+- 분할 정복
+- Greedy 알고리즘
+- NP-완전 문제
 
 ## 📝 Notes
-
-<!-- 
-노트 예시:
-- [2024-01-20 - React Hooks 완벽 가이드](2024-01-20-react-hooks.md)
-- [2024-01-15 - Next.js App Router 이해하기](2024-01-15-nextjs-app-router.md)
--->
 
 새로운 노트를 추가하려면, 날짜 기반 파일명을 사용하세요:
 `YYYY-MM-DD-topic-name.md`
 
 ## 🔗 Useful Resources
 
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [Web.dev](https://web.dev/)
-- [CSS-Tricks](https://css-tricks.com/)
+- [GeeksforGeeks - Algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
 
 ---
 
