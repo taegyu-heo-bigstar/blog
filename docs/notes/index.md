@@ -4,14 +4,14 @@
 
 ## 📂 Categories
 
-### [Python](/notes/python/)
-Python 프로그래밍 언어, 라이브러리, 프레임워크 관련 학습 내용
+### [algorithm](/notes/algorithm/)
+알고리즘 관련 학습 내용
 
-### [Web](/notes/web/)
-웹 개발 전반에 관한 학습 내용 (HTML, CSS, JavaScript, 프레임워크 등)
+### [c](/notes/c/)
+C 프로그래밍 언어 관련 학습 내용
 
-### [CS](/notes/cs/)
-컴퓨터 과학 기초 (알고리즘, 자료구조, 운영체제, 네트워크 등)
+### [os](/notes/os/)
+운영체제 관련 학습 내용
 
 ## 📝 Structure
 
