@@ -25,4 +25,4 @@ C 프로그래밍 언어 관련 학습 내용을 정리합니다.
 
 ---
 
-[← Back to Notes](../notes/)
+[← Back to Notes](../)
