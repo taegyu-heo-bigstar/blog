@@ -14,10 +14,11 @@
 blog/
 ├── docs/                     # 모든 콘텐츠 (Markdown)
 │   ├── index.md              # 메인 페이지
+│   ├── form/                 # 블로그 작성용 기초 마크다운 구조
 │   ├── notes/                # 학습 노트
-│   │   ├── python/           # Python 노트
-│   │   ├── web/              # Web 개발 노트
-│   │   └── cs/               # CS 기초 노트
+│   │   ├── os/               # OS 관련 노트
+│   │   ├── c/                # C 프로그래밍 관련 노트
+│   │   └── algorithm/        # 알고리즘 관련 노트
 │   ├── projects/             # 프로젝트 문서
 │   └── references/           # 참고 자료
 ├── mkdocs.yml                # MkDocs 설정
