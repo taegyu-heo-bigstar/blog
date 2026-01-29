@@ -1,8 +1,8 @@
 # Welcome to My Study Blog
 
-_made a structure and initial content by copilot & some ai_
-
 공부한 내용이 가끔씩 기록됩니다.
+<br>
+<u><i>made a structure and initial content by copilot & some ai</i></u>
 
 ## 📚 About
 
