@@ -26,4 +26,4 @@
 
 ---
 
-[← Back to Notes](../)
+[← Back to Notes](../notes)
