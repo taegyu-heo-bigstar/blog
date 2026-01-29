@@ -5,6 +5,7 @@
 이 문서는 MkDocs 블로그의 디렉터리 구조와 Next.js로의 마이그레이션 전략을 설명합니다.
 
 ## 디렉터리 트리
+## 디렉터리 트리
 
 ```
 blog/
@@ -12,6 +13,8 @@ blog/
 │   ├── index.md                   # 메인 홈페이지
 │   ├── notes/                     # 학습 노트 카테고리
 │   │   ├── index.md               # Notes 인덱스
+│   │   └── subject/               # 특정 분야 관련 노트
+│   │   └── subject/               # 특정 분야 관련 노트
 │   │   └── subject/               # 특정 분야 관련 노트
 │   │       ├── index.md
 │   │       └── YYYY-MM-DD-topic.md
@@ -45,7 +48,19 @@ YYYY-MM-DD-topic-name.md
 topic-name.md
 ```
 
-**예시:**
+**예시:**---
+date: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags:
+  - tag1
+  - tag2
+  - tag3
+status: [optional: draft|published|archived]
+---
+
+# 제목
+
+내용...
 - `python-quick-reference.md`
 - `git-cheatsheet.md`
 - `web-dev-tools.md`
@@ -57,8 +72,22 @@ topic-name.md
 모든 콘텐츠 파일은 YAML frontmatter로 시작합니다:
 
 ```markdown
----
+------
 date: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags:
+  - tag1
+  - tag2
+  - tag3
+status: [optional: draft|published|archived]
+---
+
+# 제목
+
+내용...
+date: YYYY-MM-DD
+updated: YYYY-MM-DD
+updated: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags:
   - tag1
