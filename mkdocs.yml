@@ -71,13 +71,13 @@ nav:
   
   - Notes:
     - notes/index.md
-    - Python:
-      - notes/python/index.md
-    - Web:
-      - notes/web/index.md
-    - CS:
-      - notes/cs/index.md
-  
+    - os:
+      - notes/os/index.md
+    - algorithm:
+      - notes/algorithm/index.md
+    - c:
+      - notes/c/index.md
+
   - Projects:
     - projects/index.md
   
