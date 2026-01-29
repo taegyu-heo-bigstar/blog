@@ -236,7 +236,9 @@ MkDocs 구조                Next.js App Router 구조
 docs/                  →   app/ (or content/)
   index.md             →     page.tsx
   notes/               →     notes/
-    python/            →       python/
+    python/            →       python/ for your repository, organization, or user account.
+
+
       index.md         →         page.tsx
       2024-01-15-*.md  →         [slug]/page.mdx
 ```

@@ -59,4 +59,4 @@ tags: [tag1, tag2]
 
 ---
 
-[← Back to Home](/)
+[← Back to Home](../)
