@@ -13,15 +13,18 @@
 ### [Notes](/notes/)
 학습 내용과 기술 노트
 
-- [Python](/notes/python/) - Python 관련 학습 내용
-- [Web](/notes/web/) - 웹 개발 관련 학습 내용
-- [CS](/notes/cs/) - 컴퓨터 과학 기초 학습 내용
+- [os](/notes/os/) - 리눅스 및 운영체제 관련 학습 내용
+- [algorithm](/notes/algorithm/) - 알고리즘 관련 학습 내용
+- [c](/notes/c/) - C 프로그래밍 관련 학습 내용
 
 ### [Projects](/projects/)
 개인 프로젝트 및 실습 기록
 
 ### [References](/references/)
 참고 자료 및 유용한 링크 모음
+
+### [form](/form/) 
+블로그 작성용 기초 마크다운 구조(※학습 내용 아님)
 
 ## 📝 Recent Updates
 
