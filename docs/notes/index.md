@@ -4,13 +4,13 @@
 
 ## 📂 Categories
 
-### [algorithm](/notes/algorithm/)
+### [algorithm](./algorithm/)
 알고리즘 관련 학습 내용
 
-### [c](/notes/c/)
+### [c](./c/)
 C 프로그래밍 언어 관련 학습 내용
 
-### [os](/notes/os/)
+### [os](./os/)
 운영체제 관련 학습 내용
 
 ## 📝 Structure
@@ -34,4 +34,4 @@ Content...
 
 ---
 
-[← Back to Home](/)
+[← Back to Home](../)
