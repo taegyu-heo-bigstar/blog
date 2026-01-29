@@ -14,25 +14,15 @@ blog/
     ├── index.md                          # 메인 홈페이지
     │
     ├── notes/                            # 📚 학습 노트 카테고리
-    │   ├── index.md                      # Notes 메인 인덱스
-    │   │
-    │   ├── python/                       # Python 노트
-    │   │   ├── index.md
-    │   │   └── 2024-01-15-decorators.md  # 예제: Python 데코레이터
-    │   │
-    │   ├── web/                          # Web 개발 노트
-    │   │   ├── index.md
-    │   │   └── 2024-01-20-react-hooks.md # 예제: React Hooks
-    │   │
-    │   └── cs/                           # CS 기초 노트
+    │   └── subject/               # 특정 분야 관련 노트
     │       ├── index.md
-    │       └── 2024-01-25-binary-tree-traversal.md  # 예제: 트리 순회
-    │
-    ├── projects/                         # 💻 프로젝트 문서
-    │   └── index.md
-    │
-    └── references/                       # 📖 참고 자료
-        └── index.md
+    │       └── YYYY-MM-DD-topic.md
+    ├── projects/                  # 프로젝트 문서
+    │   ├── index.md
+    │   └── YYYY-MM-project-name.md
+    └── references/                # 참고 자료
+        ├── index.md
+        └── topic-name.md
 ```
 
 ## 📄 2. mkdocs.yml 예시 (핵심 부분)
@@ -70,12 +60,12 @@ nav:
   - Home: index.md
   - Notes:
     - notes/index.md
-    - Python:
-      - notes/python/index.md
-    - Web:
-      - notes/web/index.md
-    - CS:
-      - notes/cs/index.md
+    - os:
+      - notes/os/index.md
+    - algorithm:
+      - notes/algorithm/index.md
+    - c:
+      - notes/c/index.md
   - Projects:
     - projects/index.md
   - References:
@@ -116,9 +106,9 @@ plugins:
 
 ### [Notes](/notes/)
 학습 내용과 기술 노트
-- [Python](/notes/python/)
-- [Web](/notes/web/)
-- [CS](/notes/cs/)
+- [algorithm](/notes/algorithm/)
+- [os](/notes/os/)
+- [c](/notes/c/)
 
 ### [Projects](/projects/)
 개인 프로젝트 및 실습 기록
@@ -153,6 +143,7 @@ Python 프로그래밍 언어 관련 학습 내용을 정리합니다.
 ```markdown
 ---
 date: 2024-01-15
+updated: 2024-01-15
 tags:
   - python
   - decorators
