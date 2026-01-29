@@ -1,8 +1,8 @@
 # Study Blog
 
-공부한 내용이 가끔씩 기록됩니다. 
+공부한 내용이 가끔씩 기록됩니다.
 
-**본 repo의 구조는 copilot을 비롯한 ai를 기반으로 생성됩니다. 콘텐츠 또한 부분적으로 ai가 참고됩니다.**
+<u><i>made a structure and initial content by copilot & some ai</i></u>
 
 ## 📖 소개
 
