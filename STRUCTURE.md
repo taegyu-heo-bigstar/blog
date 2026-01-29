@@ -199,9 +199,9 @@ docs/                    →  app/
 ```json
 {
   "dependencies": {
-    "next": "^14.0.0",
+    "next": "^15.0.0",
     "react": "^18.0.0",
-    "next-mdx-remote": "^4.4.1",
+    "next-mdx-remote": "^5.0.0",
     "gray-matter": "^4.0.3",
     "remark": "^15.0.0",
     "remark-gfm": "^4.0.0",
@@ -249,8 +249,8 @@ export function getAllPosts() {
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# MkDocs 및 Material 테마 설치
-pip install mkdocs-material
+# MkDocs 및 플러그인 설치
+pip install -r requirements.txt
 
 # 로컬 서버 실행
 mkdocs serve
@@ -278,5 +278,3 @@ mkdocs gh-deploy
 - [Contentlayer](https://contentlayer.dev/)
 
 ---
-
-Last updated: {{ git_revision_date_localized }}

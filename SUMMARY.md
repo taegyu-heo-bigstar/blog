@@ -84,9 +84,9 @@ nav:
 # Markdown 확장 기능
 markdown_extensions:
   - admonition                  # 경고/정보 박스
-  - codehilite                  # 코드 하이라이팅
   - toc:
       permalink: true           # 헤딩 링크
+  - pymdownx.highlight          # 코드 하이라이팅
   - pymdownx.superfences        # 코드 블록 (Mermaid 지원)
   - pymdownx.tabbed             # 탭
   - pymdownx.tasklist           # 체크리스트

@@ -33,5 +33,3 @@
 - **Future Migration**: Next.js + MDX
 
 ---
-
-Last updated: {{ git_revision_date_localized }}

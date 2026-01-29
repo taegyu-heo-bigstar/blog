@@ -39,8 +39,8 @@ blog/
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# MkDocs Material 설치
-pip install mkdocs-material
+# 의존성 설치
+pip install -r requirements.txt
 ```
 
 ### 로컬 개발 서버 실행
