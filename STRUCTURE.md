@@ -45,7 +45,19 @@ YYYY-MM-DD-topic-name.md
 topic-name.md
 ```
 
-**예시:**
+**예시:**---
+date: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags:
+  - tag1
+  - tag2
+  - tag3
+status: [optional: draft|published|archived]
+---
+
+# 제목
+
+내용...
 - `python-quick-reference.md`
 - `git-cheatsheet.md`
 - `web-dev-tools.md`
@@ -57,7 +69,19 @@ topic-name.md
 모든 콘텐츠 파일은 YAML frontmatter로 시작합니다:
 
 ```markdown
+------
+date: YYYY-MM-DD
+updated: YYYY-MM-DD
+tags:
+  - tag1
+  - tag2
+  - tag3
+status: [optional: draft|published|archived]
 ---
+
+# 제목
+
+내용...
 date: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags:
