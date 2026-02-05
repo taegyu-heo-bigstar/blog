@@ -73,6 +73,7 @@ nav:
     - notes/index.md
     - os:
       - notes/os/index.md
+      - notes/os/2026-01-29-Debian.md
     - algorithm:
       - notes/algorithm/index.md
     - c:
