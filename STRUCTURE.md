@@ -42,7 +42,6 @@ YYYY-MM-DD-topic-name.md
 ```markdown
 ------
 date: YYYY-MM-DD
-updated: YYYY-MM-DD
 tags:
   - tag1
   - tag2
