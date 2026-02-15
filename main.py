@@ -77,28 +77,31 @@ def define_env(env):
         return markdown_list
 
     def _notes_in_dir(dir_rel_from_docs):
-        """Return list of (full_path, rel_path_from_docs) for .md files in a docs/ subdir, excluding index.md."""
+        """Return list of (full_path, rel_path_from_docs) for .md files under a docs/ subdir, recursively, excluding any index.md."""
         base_dir = os.path.join(env.project_dir, 'docs', dir_rel_from_docs)
         if not os.path.exists(base_dir):
             return []
 
         out = []
-        for name in os.listdir(base_dir):
-            if not name.endswith('.md'):
-                continue
-            if name == 'index.md':
-                continue
-            full_path = os.path.join(base_dir, name)
-            if os.path.isfile(full_path):
-                rel_path = os.path.relpath(full_path, os.path.join(env.project_dir, 'docs'))
-                out.append((full_path, rel_path))
+        docs_root = os.path.join(env.project_dir, 'docs')
+        for root, dirs, files in os.walk(base_dir):
+            for name in files:
+                if not name.endswith('.md'):
+                    continue
+                if name == 'index.md':
+                    continue
+                full_path = os.path.join(root, name)
+                if os.path.isfile(full_path):
+                    rel_path = os.path.relpath(full_path, docs_root)
+                    out.append((full_path, rel_path))
         return out
 
     def _format_single_or_none(item):
         if item is None:
             return "None"
         display_date = item['date'].split(' ')[0]
-        return f"- `{display_date}` [{item['title']}](./{os.path.basename(item['path'])})"
+        # Use docs-relative link so it works even when the latest note is in a nested subdirectory.
+        return f"- `{display_date}` [{item['title']}](/{item['path']})"
 
     def _latest_note_in_current_dir(kind):
         """kind: 'created' or 'updated'"""
