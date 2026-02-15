@@ -65,25 +65,7 @@ theme:
     repo: fontawesome/brands/github
     logo: material/book-open-page-variant
 
-# Navigation Structure
-nav:
-  - Home: index.md
-  
-  - Notes:
-    - notes/index.md
-    - os:
-      - notes/os/index.md
-      - notes/os/2026-01-29-Debian.md
-    - algorithm:
-      - notes/algorithm/index.md
-    - c:
-      - notes/c/index.md
-
-  - Projects:
-    - projects/index.md
-  
-  - References:
-    - references/index.md
+# Navigation Structure (Authored by Awesome Pages Plugin)
 
 # Extensions
 markdown_extensions:
@@ -143,6 +125,13 @@ plugins:
       separator: '[\s\-\.]+'
   
   - tags                        # Tags plugin
+  
+  - awesome-pages               # Automatic navigation generation
+  
+  - git-revision-date-localized: # Last updated date
+      type: date
+      fallback_to_build_date: true
+      enable_creation_date: true
 
 # Extra CSS and JavaScript (uncomment to use)
 # extra_css:
