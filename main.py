@@ -101,12 +101,20 @@ def define_env(env):
             return "None"
         display_date = item['date'].split(' ')[0]
         # Build a MkDocs-friendly link:
-        # - don't use a leading slash (breaks when hosted under a subpath like /blog/)
-        # - don't link to the .md source; MkDocs usually renders to a directory URL
+        # - prefer an absolute URL based on site_url so it works from any page
+        #   (especially when hosted under a subpath like https://<user>.github.io/blog/)
+        # - don't link to the .md source; MkDocs renders to a directory URL
         rel = item['path']
         if rel.endswith('.md'):
             rel = rel[:-3]
-        return f"- `{display_date}` [{item['title']}](./{rel}/)"
+        # `env.conf['site_url']` is configured in mkdocs.yml
+        site_url = (env.conf.get('site_url') or '').rstrip('/')
+        if site_url:
+            url = f"{site_url}/{rel}/"
+        else:
+            # Fallback: relative link from current page
+            url = f"./{rel}/"
+        return f"- `{display_date}` [{item['title']}]({url})"
 
     def _latest_note_in_current_dir(kind):
         """kind: 'created' or 'updated'"""
