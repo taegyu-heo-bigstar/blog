@@ -13,15 +13,8 @@ blog/
 │   ├── notes/                     # 학습 노트 카테고리
 │   │   ├── index.md               # Notes 인덱스
 │   │   └── subject/               # 특정 분야 관련 노트
-│   │   └── subject/               # 특정 분야 관련 노트
 │   │       ├── index.md
 │   │       └── YYYY-MM-DD-topic.md
-│   ├── projects/                  # 프로젝트 문서
-│   │   ├── index.md
-│   │   └── YYYY-MM-project-name.md
-│   └── references/                # 참고 자료
-│       ├── index.md
-│       └── topic-name.md
 ├── mkdocs.yml                     # MkDocs 설정 파일
 ├── .gitignore                     # Git 무시 파일
 └── README.md                      # 프로젝트 설명
@@ -29,7 +22,7 @@ blog/
 
 ## 📝 파일 명명 규칙
 
-### 날짜 기반 파일 (Notes, Projects)
+### 날짜 기반 파일 (Notes)
 
 ```
 YYYY-MM-DD-topic-name.md
@@ -39,17 +32,6 @@ YYYY-MM-DD-topic-name.md
 - `2024-01-15-decorators.md`
 - `2024-01-20-react-hooks.md`
 - `2024-01-25-binary-tree-traversal.md`
-
-### 주제 기반 파일 (References)
-
-```
-topic-name.md
-```
-
-**예시:**
-- `python-quick-reference.md`
-- `git-cheatsheet.md`
-- `web-dev-tools.md`
 
 ## 🎯 콘텐츠 작성 가이드
 
@@ -109,43 +91,9 @@ tags:
 [← Back to Category](/notes/category/)
 ```
 
-#### Projects 템플릿
+## 🔄 Next.js 마이그레이션
 
-```markdown
----
-date: 2024-01-15
-status: completed
-tags:
-  - react
-  - typescript
----
-
-# 프로젝트 이름
-
-## Overview
-프로젝트 개요
-
-## Tech Stack
-- React
-- TypeScript
-- Next.js
-
-## Features
-- 기능 1
-- 기능 2
-
-## Challenges & Solutions
-직면한 문제와 해결 방법
-
-## Lessons Learned
-배운 점
-
-## Links
-- [GitHub](url)
-- [Demo](url)
-```
-
-## 🔄 Next.js 마이그레이션 전략
+이 구조는 Next.js로 쉽게 마이그레이션할 수 있도록 설계되었습니다:
 
 ### 현재 구조의 장점
 
