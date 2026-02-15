@@ -8,8 +8,8 @@ C 프로그래밍 언어 관련 학습 내용을 정리합니다.
 
 ## 📝 Latest Notes
 
-create {{ recent_created_notes(5) }}
-update {{ recent_updated_notes(5) }}
+{{ latest_created_note_in_dir() }}
+{{ latest_updated_note_in_dir() }}
 
 ## 🔗 Useful Resources
 
