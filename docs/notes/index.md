@@ -15,8 +15,8 @@ C 프로그래밍 언어 관련 학습 내용
 
 ## 📝 Latest Notes
 
-{{ latest_created_note_in_dir() }}
-{{ latest_updated_note_in_dir() }}
+- create {{ latest_created_note_in_dir() }}
+- update {{ latest_updated_note_in_dir() }}
 
 ---
 

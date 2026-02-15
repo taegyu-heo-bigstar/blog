@@ -19,8 +19,8 @@
 
 ## 📝 Latest Notes
 
-{{ latest_created_note_in_dir() }}
-{{ latest_updated_note_in_dir() }}
+- create {{ latest_created_note_in_dir() }}
+- update {{ latest_updated_note_in_dir() }}
 
 
 ## 🚀 Tech Stack
