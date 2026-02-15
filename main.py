@@ -100,8 +100,13 @@ def define_env(env):
         if item is None:
             return "None"
         display_date = item['date'].split(' ')[0]
-        # Use docs-relative link so it works even when the latest note is in a nested subdirectory.
-        return f"- `{display_date}` [{item['title']}](/{item['path']})"
+        # Build a MkDocs-friendly link:
+        # - don't use a leading slash (breaks when hosted under a subpath like /blog/)
+        # - don't link to the .md source; MkDocs usually renders to a directory URL
+        rel = item['path']
+        if rel.endswith('.md'):
+            rel = rel[:-3]
+        return f"- `{display_date}` [{item['title']}](./{rel}/)"
 
     def _latest_note_in_current_dir(kind):
         """kind: 'created' or 'updated'"""
@@ -209,7 +214,10 @@ def define_env(env):
         output = ""
         for item in data[:limit]:
             display_date = item['date'].split(' ')[0] # YYYY-MM-DD
-            output += f"- `{display_date}` [{item['title']}](./{item['path']})\n"
+            rel = item['path']
+            if rel.endswith('.md'):
+                rel = rel[:-3]
+            output += f"- `{display_date}` [{item['title']}](./{rel}/)\n"
         return output
 
     @env.macro
@@ -234,5 +242,8 @@ def define_env(env):
         output = ""
         for item in data[:limit]:
             display_date = item['date'].split(' ')[0]
-            output += f"- `{display_date}` [{item['title']}](./{item['path']})\n"
+            rel = item['path']
+            if rel.endswith('.md'):
+                rel = rel[:-3]
+            output += f"- `{display_date}` [{item['title']}](./{rel}/)\n"
         return output
