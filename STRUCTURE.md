@@ -42,6 +42,7 @@ YYYY-MM-DD-topic-name.md
 ```markdown
 ------
 date: YYYY-MM-DD
+update : {{ git_revision_date_localized }}
 tags:
   - tag1
   - tag2
@@ -51,7 +52,7 @@ status: [optional: draft|published|archived]
 
 # 제목
 
-내용...
+내용
 ```
 
 ### 카테고리별 템플릿
