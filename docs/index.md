@@ -17,10 +17,11 @@
 - [algorithm](./notes/algorithm/) - 알고리즘 관련 학습 내용
 - [c](./notes/c/) - C 프로그래밍 관련 학습 내용
 
+## 📝 Latest Notes
 
-## 📝 Recent Updates
+create {{ recent_created_notes(5) }}
+update {{ recent_updated_notes(5) }}
 
-최근 업데이트된 내용은 각 카테고리의 인덱스 페이지에서 확인할 수 있습니다.
 
 ## 🚀 Tech Stack
 
