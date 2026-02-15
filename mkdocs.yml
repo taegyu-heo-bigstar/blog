@@ -128,6 +128,8 @@ plugins:
   
   - awesome-pages               # Automatic navigation generation
   
+  - macros                      # Dynamic content generation
+  
   - git-revision-date-localized: # Last updated date
       type: date
       fallback_to_build_date: true
