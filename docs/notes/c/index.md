@@ -4,8 +4,7 @@ C 프로그래밍 언어 관련 학습 내용을 정리합니다.
 
 ## 📝 Notes
 
-새로운 노트를 추가하려면, 날짜 기반 파일명을 사용하세요:
-`YYYY-MM-DD-topic-name.md`
+{{ list_siblings() }}
 
 ## 🔗 Useful Resources
 

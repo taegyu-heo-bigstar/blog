@@ -17,8 +17,6 @@
 - [algorithm](./notes/algorithm/) - 알고리즘 관련 학습 내용
 - [c](./notes/c/) - C 프로그래밍 관련 학습 내용
 
-### [form](/form/) 
-블로그 작성용 기초 마크다운 구조(※학습 내용 아님)
 
 ## 📝 Recent Updates
 
