@@ -28,6 +28,19 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### (선택) Front matter `date`/`updated` 자동 기록
+
+문서 상단 YAML front matter의 `date`, `updated`를 **커밋 전에 자동으로 갱신**하고 싶다면 pre-commit 훅을 사용합니다.
+
+- `date`: 비어있을 때만 오늘 날짜로 채움
+- `updated`: 변경된 파일은 항상 오늘 날짜로 갱신
+
+설정 파일: `.pre-commit-config.yaml`
+
+```bash
+pre-commit install
+```
+
 ### 로컬 개발 서버 실행
 
 ```bash
